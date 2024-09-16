@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CardHolder </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CardHolder ">
+    
+    <meta name="description" content="Base class of all card holders">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DEAL.CardHolder">
+
+
+
+  <h1 id="DEAL_CardHolder" data-uid="DEAL.CardHolder" class="text-break">Class CardHolder</h1>
+  <div class="markdown level0 summary"><p>Base class of all card holders</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Object</span></div>
+    <div class="level2"><span class="xref">Component</span></div>
+    <div class="level3"><span class="xref">Behaviour</span></div>
+    <div class="level4"><span class="xref">MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">CardHolder</span></div>
+      <div class="level6"><a class="xref" href="DEAL.BaseDeck.html">BaseDeck</a></div>
+      <div class="level6"><a class="xref" href="DEAL.BaseTile.html">BaseTile</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DEAL.html">DEAL</a></h6>
+  <h6><strong>Assembly</strong>: Mustaverse.DEAL.Runtime.dll</h6>
+  <h5 id="DEAL_CardHolder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CardHolder : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="DEAL_CardHolder_Actor" data-uid="DEAL.CardHolder.Actor">Actor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionActor Actor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.ActionActor.html">ActionActor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="DEAL_CardHolder_AttachedChipHolder" data-uid="DEAL.CardHolder.AttachedChipHolder">AttachedChipHolder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChipHolder AttachedChipHolder</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.ChipHolder.html">ChipHolder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="DEAL_CardHolder_CustomProperties" data-uid="DEAL.CardHolder.CustomProperties">CustomProperties</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Dictionary&lt;string, int&gt; CustomProperties</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="DEAL_CardHolder_Index" data-uid="DEAL.CardHolder.Index">Index</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Index</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="DEAL_CardHolder_avatar" data-uid="DEAL.CardHolder.avatar">avatar</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar avatar</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Avatar.html">Avatar</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="DEAL_CardHolder_colume" data-uid="DEAL.CardHolder.colume">colume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int colume</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="DEAL_CardHolder_ClaimOwnership_" data-uid="DEAL.CardHolder.ClaimOwnership*"></a>
+  <h4 id="DEAL_CardHolder_ClaimOwnership_DEAL_BaseCard_" data-uid="DEAL.CardHolder.ClaimOwnership(DEAL.BaseCard)">ClaimOwnership(BaseCard)</h4>
+  <div class="markdown level1 summary"><p>Claim ownership of a card</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ClaimOwnership(BaseCard c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The card to claim</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="DEAL_CardHolder_ClearOwnership_" data-uid="DEAL.CardHolder.ClearOwnership*"></a>
+  <h4 id="DEAL_CardHolder_ClearOwnership_DEAL_BaseCard_" data-uid="DEAL.CardHolder.ClearOwnership(DEAL.BaseCard)">ClearOwnership(BaseCard)</h4>
+  <div class="markdown level1 summary"><p>Release ownership of a card, will first trigger special move if any exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ClearOwnership(BaseCard c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The card to release</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="DEAL_CardHolder_GenerateAutoPickCombinations_" data-uid="DEAL.CardHolder.GenerateAutoPickCombinations*"></a>
+  <h4 id="DEAL_CardHolder_GenerateAutoPickCombinations_DEAL_FSM_CardChoice_" data-uid="DEAL.CardHolder.GenerateAutoPickCombinations(DEAL.FSM.CardChoice)">GenerateAutoPickCombinations(CardChoice)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IEnumerable&lt;BaseCard&gt;[] GenerateAutoPickCombinations(CardChoice choice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.CardChoice.html">CardChoice</a></td>
+        <td><span class="parametername">choice</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="DEAL_CardHolder_GetHolderId_" data-uid="DEAL.CardHolder.GetHolderId*"></a>
+  <h4 id="DEAL_CardHolder_GetHolderId" data-uid="DEAL.CardHolder.GetHolderId">GetHolderId()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int GetHolderId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="DEAL_CardHolder_GetSize_" data-uid="DEAL.CardHolder.GetSize*"></a>
+  <h4 id="DEAL_CardHolder_GetSize" data-uid="DEAL.CardHolder.GetSize">GetSize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int GetSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="DEAL_CardHolder_OnCardClaimed_" data-uid="DEAL.CardHolder.OnCardClaimed*"></a>
+  <h4 id="DEAL_CardHolder_OnCardClaimed_DEAL_BaseCard_" data-uid="DEAL.CardHolder.OnCardClaimed(DEAL.BaseCard)">OnCardClaimed(BaseCard)</h4>
+  <div class="markdown level1 summary"><p>Triggered when a card is claimed by this holder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCardClaimed(BaseCard c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The card claimed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="DEAL_CardHolder_OnCardCleared_" data-uid="DEAL.CardHolder.OnCardCleared*"></a>
+  <h4 id="DEAL_CardHolder_OnCardCleared_DEAL_BaseCard_" data-uid="DEAL.CardHolder.OnCardCleared(DEAL.BaseCard)">OnCardCleared(BaseCard)</h4>
+  <div class="markdown level1 summary"><p>Triggered when a card is cleared from this holder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCardCleared(BaseCard c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The card cleared</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="DEAL_CardHolder_OnRefreshDeck_" data-uid="DEAL.CardHolder.OnRefreshDeck*"></a>
+  <h4 id="DEAL_CardHolder_OnRefreshDeck" data-uid="DEAL.CardHolder.OnRefreshDeck">OnRefreshDeck()</h4>
+  <div class="markdown level1 summary"><p>Callback to be invoked whenever this holder's cards have changed and need to be refreshed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnRefreshDeck()</code></pre>
+  </div>
+
+
+  <a id="DEAL_CardHolder_PickCards_" data-uid="DEAL.CardHolder.PickCards*"></a>
+  <h4 id="DEAL_CardHolder_PickCards_DEAL_FSM_CardChoice_" data-uid="DEAL.CardHolder.PickCards(DEAL.FSM.CardChoice)">PickCards(CardChoice)</h4>
+  <div class="markdown level1 summary"><p>Pick cards from this holder based on given rules</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract BaseCard[] PickCards(CardChoice choice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.CardChoice.html">CardChoice</a></td>
+        <td><span class="parametername">choice</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a>[]</td>
+        <td><p>An array of cards picked</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="DEAL_CardHolder_SetCustomProperties_" data-uid="DEAL.CardHolder.SetCustomProperties*"></a>
+  <h4 id="DEAL_CardHolder_SetCustomProperties_System_String_System_Int32_" data-uid="DEAL.CardHolder.SetCustomProperties(System.String,System.Int32)">SetCustomProperties(string, int)</h4>
+  <div class="markdown level1 summary"><p>Set custom properties for this holder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCustomProperties(string key, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the property</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the property</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="DEAL_CardHolder_TransferCard_" data-uid="DEAL.CardHolder.TransferCard*"></a>
+  <h4 id="DEAL_CardHolder_TransferCard_DEAL_BaseCard_DEAL_CardHolder_" data-uid="DEAL.CardHolder.TransferCard(DEAL.BaseCard,DEAL.CardHolder)">TransferCard(BaseCard, CardHolder)</h4>
+  <div class="markdown level1 summary"><p>Transfer a single card to another holder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TransferCard(BaseCard c, CardHolder newOwner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The card to transfer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></td>
+        <td><span class="parametername">newOwner</span></td>
+        <td><p>The new owner of the card</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="DEAL_CardHolder_TransferCards_" data-uid="DEAL.CardHolder.TransferCards*"></a>
+  <h4 id="DEAL_CardHolder_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_" data-uid="DEAL.CardHolder.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)">TransferCards(IEnumerable&lt;BaseCard&gt;, CardHolder)</h4>
+  <div class="markdown level1 summary"><p>Transfer a group of cards to another holder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TransferCards(IEnumerable&lt;BaseCard&gt; cards, CardHolder newOwner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</td>
+        <td><span class="parametername">cards</span></td>
+        <td><p>The cards to transfer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></td>
+        <td><span class="parametername">newOwner</span></td>
+        <td><p>The new owner of the cards</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
