@@ -2169,6 +2169,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/Logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
