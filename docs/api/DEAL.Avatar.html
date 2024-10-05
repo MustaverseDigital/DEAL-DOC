@@ -1,616 +1,677 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class Avatar </title>
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Avatar ">
-    
-    <meta name="description" content="Avatar class for player representation in the game">
-      <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      
+      <meta name="description" content="Avatar class for player representation in the game">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar.md&amp;value=---%0Auid%3A%20DEAL.Avatar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/Logo.png" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/Logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="DEAL.Avatar">
+
+        <article data-uid="DEAL.Avatar">
 
 
 
-  <h1 id="DEAL_Avatar" data-uid="DEAL.Avatar" class="text-break">Class Avatar</h1>
-  <div class="markdown level0 summary"><p>Avatar class for player representation in the game</p>
+  <h1 id="DEAL_Avatar" data-uid="DEAL.Avatar" class="text-break">
+Class Avatar  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="DEAL.html">DEAL</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Mustaverse.DEAL.Runtime.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Avatar class for player representation in the game</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">Object</span></div>
-    <div class="level2"><span class="xref">Component</span></div>
-    <div class="level3"><span class="xref">Behaviour</span></div>
-    <div class="level4"><span class="xref">MonoBehaviour</span></div>
-    <div class="level5"><span class="xref">Avatar</span></div>
-  </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="DEAL.IDealInstantiateCallback.html">IDealInstantiateCallback</a></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="DEAL.html">DEAL</a></h6>
-  <h6><strong>Assembly</strong>: Mustaverse.DEAL.Runtime.dll</h6>
-  <h5 id="DEAL_Avatar_syntax">Syntax</h5>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class Avatar : MonoBehaviour, IDealInstantiateCallback</code></pre>
   </div>
-  <h3 id="fields">Fields
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_AvatarType.md&amp;value=---%0Auid%3A%20DEAL.Avatar.AvatarType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L19">View Source</a>
-  </span>
-  <h4 id="DEAL_Avatar_AvatarType" data-uid="DEAL.Avatar.AvatarType">AvatarType</h4>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">Avatar</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="DEAL.IDealInstantiateCallback.html">IDealInstantiateCallback</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="DEAL_Avatar_AvatarType" data-uid="DEAL.Avatar.AvatarType">
+  AvatarType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GlobalEnum.AvatarType AvatarType</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.GlobalEnum.html">GlobalEnum</a>.<a class="xref" href="DEAL.GlobalEnum.AvatarType.html">AvatarType</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_IsEliminated.md&amp;value=---%0Auid%3A%20DEAL.Avatar.IsEliminated%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L18">View Source</a>
-  </span>
-  <h4 id="DEAL_Avatar_IsEliminated" data-uid="DEAL.Avatar.IsEliminated">IsEliminated</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DEAL.GlobalEnum.html">GlobalEnum</a>.<a class="xref" href="DEAL.GlobalEnum.AvatarType.html">AvatarType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DEAL_Avatar_IsEliminated" data-uid="DEAL.Avatar.IsEliminated">
+  IsEliminated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsEliminated</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_NameText.md&amp;value=---%0Auid%3A%20DEAL.Avatar.NameText%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L16">View Source</a>
-  </span>
-  <h4 id="DEAL_Avatar_NameText" data-uid="DEAL.Avatar.NameText">NameText</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DEAL_Avatar_NameText" data-uid="DEAL.Avatar.NameText">
+  NameText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TMP_Text NameText</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TMP_Text</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_PlayerId.md&amp;value=---%0Auid%3A%20DEAL.Avatar.PlayerId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L14">View Source</a>
-  </span>
-  <h4 id="DEAL_Avatar_PlayerId" data-uid="DEAL.Avatar.PlayerId">PlayerId</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TMP_Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DEAL_Avatar_PlayerId" data-uid="DEAL.Avatar.PlayerId">
+  PlayerId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int PlayerId</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_SeatId.md&amp;value=---%0Auid%3A%20DEAL.Avatar.SeatId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L15">View Source</a>
-  </span>
-  <h4 id="DEAL_Avatar_SeatId" data-uid="DEAL.Avatar.SeatId">SeatId</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DEAL_Avatar_SeatId" data-uid="DEAL.Avatar.SeatId">
+  SeatId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int SeatId</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_is_Ready.md&amp;value=---%0Auid%3A%20DEAL.Avatar.is_Ready%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L17">View Source</a>
-  </span>
-  <h4 id="DEAL_Avatar_is_Ready" data-uid="DEAL.Avatar.is_Ready">is_Ready</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DEAL_Avatar_is_Ready" data-uid="DEAL.Avatar.is_Ready">
+  is_Ready
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool is_Ready</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_IsAI.md&amp;value=---%0Auid%3A%20DEAL.Avatar.IsAI%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L62">View Source</a>
-  </span>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
   <a id="DEAL_Avatar_IsAI_" data-uid="DEAL.Avatar.IsAI*"></a>
-  <h4 id="DEAL_Avatar_IsAI" data-uid="DEAL.Avatar.IsAI">IsAI</h4>
+
+  <h3 id="DEAL_Avatar_IsAI" data-uid="DEAL.Avatar.IsAI">
+  IsAI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsAI { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_IsMine.md&amp;value=---%0Auid%3A%20DEAL.Avatar.IsMine%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L60">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="DEAL_Avatar_IsMine_" data-uid="DEAL.Avatar.IsMine*"></a>
-  <h4 id="DEAL_Avatar_IsMine" data-uid="DEAL.Avatar.IsMine">IsMine</h4>
+
+  <h3 id="DEAL_Avatar_IsMine" data-uid="DEAL.Avatar.IsMine">
+  IsMine
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsMine { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_ViewId.md&amp;value=---%0Auid%3A%20DEAL.Avatar.ViewId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L61">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="DEAL_Avatar_ViewId_" data-uid="DEAL.Avatar.ViewId*"></a>
-  <h4 id="DEAL_Avatar_ViewId" data-uid="DEAL.Avatar.ViewId">ViewId</h4>
+
+  <h3 id="DEAL_Avatar_ViewId" data-uid="DEAL.Avatar.ViewId">
+  ViewId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int ViewId { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_Eliminate.md&amp;value=---%0Auid%3A%20DEAL.Avatar.Eliminate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L36">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="DEAL_Avatar_Eliminate_" data-uid="DEAL.Avatar.Eliminate*"></a>
-  <h4 id="DEAL_Avatar_Eliminate" data-uid="DEAL.Avatar.Eliminate">Eliminate()</h4>
+
+  <h3 id="DEAL_Avatar_Eliminate" data-uid="DEAL.Avatar.Eliminate">
+  Eliminate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Eliminate()</code></pre>
   </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_OnDialogSingleProperty_DEAL_Event_PopDialogData_DEAL_UI_DialogProperty_.md&amp;value=---%0Auid%3A%20DEAL.Avatar.OnDialogSingleProperty(DEAL.Event.PopDialogData%2CDEAL.UI.DialogProperty)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L96">View Source</a>
-  </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_Avatar_OnDialogSingleProperty_" data-uid="DEAL.Avatar.OnDialogSingleProperty*"></a>
-  <h4 id="DEAL_Avatar_OnDialogSingleProperty_DEAL_Event_PopDialogData_DEAL_UI_DialogProperty_" data-uid="DEAL.Avatar.OnDialogSingleProperty(DEAL.Event.PopDialogData,DEAL.UI.DialogProperty)">OnDialogSingleProperty(PopDialogData, DialogProperty)</h4>
+
+  <h3 id="DEAL_Avatar_OnDialogSingleProperty_DEAL_Event_PopDialogData_DEAL_UI_DialogProperty_" data-uid="DEAL.Avatar.OnDialogSingleProperty(DEAL.Event.PopDialogData,DEAL.UI.DialogProperty)">
+  OnDialogSingleProperty(PopDialogData, DialogProperty)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnDialogSingleProperty(PopDialogData data, DialogProperty dialogProperty)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.Event.PopDialogData.html">PopDialogData</a></td>
-        <td><span class="parametername">data</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DEAL.UI.DialogProperty.html">DialogProperty</a></td>
-        <td><span class="parametername">dialogProperty</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_OnDialogVoid_DEAL_Event_PopDialogData_.md&amp;value=---%0Auid%3A%20DEAL.Avatar.OnDialogVoid(DEAL.Event.PopDialogData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L82">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="DEAL.Event.PopDialogData.html">PopDialogData</a></dt>
+    <dd></dd>
+    <dt><code>dialogProperty</code> <a class="xref" href="DEAL.UI.DialogProperty.html">DialogProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_Avatar_OnDialogVoid_" data-uid="DEAL.Avatar.OnDialogVoid*"></a>
-  <h4 id="DEAL_Avatar_OnDialogVoid_DEAL_Event_PopDialogData_" data-uid="DEAL.Avatar.OnDialogVoid(DEAL.Event.PopDialogData)">OnDialogVoid(PopDialogData)</h4>
+
+  <h3 id="DEAL_Avatar_OnDialogVoid_DEAL_Event_PopDialogData_" data-uid="DEAL.Avatar.OnDialogVoid(DEAL.Event.PopDialogData)">
+  OnDialogVoid(PopDialogData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnDialogVoid(PopDialogData data)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.Event.PopDialogData.html">PopDialogData</a></td>
-        <td><span class="parametername">data</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_OnInstantiate.md&amp;value=---%0Auid%3A%20DEAL.Avatar.OnInstantiate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L41">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="DEAL.Event.PopDialogData.html">PopDialogData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_Avatar_OnInstantiate_" data-uid="DEAL.Avatar.OnInstantiate*"></a>
-  <h4 id="DEAL_Avatar_OnInstantiate" data-uid="DEAL.Avatar.OnInstantiate">OnInstantiate()</h4>
+
+  <h3 id="DEAL_Avatar_OnInstantiate" data-uid="DEAL.Avatar.OnInstantiate">
+  OnInstantiate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnInstantiate()</code></pre>
   </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_OnNpcProcessDialog_DEAL_Event_PopDialogData_.md&amp;value=---%0Auid%3A%20DEAL.Avatar.OnNpcProcessDialog(DEAL.Event.PopDialogData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L64">View Source</a>
-  </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_Avatar_OnNpcProcessDialog_" data-uid="DEAL.Avatar.OnNpcProcessDialog*"></a>
-  <h4 id="DEAL_Avatar_OnNpcProcessDialog_DEAL_Event_PopDialogData_" data-uid="DEAL.Avatar.OnNpcProcessDialog(DEAL.Event.PopDialogData)">OnNpcProcessDialog(PopDialogData)</h4>
+
+  <h3 id="DEAL_Avatar_OnNpcProcessDialog_DEAL_Event_PopDialogData_" data-uid="DEAL.Avatar.OnNpcProcessDialog(DEAL.Event.PopDialogData)">
+  OnNpcProcessDialog(PopDialogData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnNpcProcessDialog(PopDialogData data)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.Event.PopDialogData.html">PopDialogData</a></td>
-        <td><span class="parametername">data</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_RandomName.md&amp;value=---%0Auid%3A%20DEAL.Avatar.RandomName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L47">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="DEAL.Event.PopDialogData.html">PopDialogData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_Avatar_RandomName_" data-uid="DEAL.Avatar.RandomName*"></a>
-  <h4 id="DEAL_Avatar_RandomName" data-uid="DEAL.Avatar.RandomName">RandomName()</h4>
+
+  <h3 id="DEAL_Avatar_RandomName" data-uid="DEAL.Avatar.RandomName">
+  RandomName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void RandomName()</code></pre>
   </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_SetReady.md&amp;value=---%0Auid%3A%20DEAL.Avatar.SetReady%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L31">View Source</a>
-  </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_Avatar_SetReady_" data-uid="DEAL.Avatar.SetReady*"></a>
-  <h4 id="DEAL_Avatar_SetReady" data-uid="DEAL.Avatar.SetReady">SetReady()</h4>
+
+  <h3 id="DEAL_Avatar_SetReady" data-uid="DEAL.Avatar.SetReady">
+  SetReady()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void SetReady()</code></pre>
   </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar_SetSeat_System_Int32_.md&amp;value=---%0Auid%3A%20DEAL.Avatar.SetSeat(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L25">View Source</a>
-  </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_Avatar_SetSeat_" data-uid="DEAL.Avatar.SetSeat*"></a>
-  <h4 id="DEAL_Avatar_SetSeat_System_Int32_" data-uid="DEAL.Avatar.SetSeat(System.Int32)">SetSeat(int)</h4>
+
+  <h3 id="DEAL_Avatar_SetSeat_System_Int32_" data-uid="DEAL.Avatar.SetSeat(System.Int32)">
+  SetSeat(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void SetSeat(int i)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">i</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="DEAL.IDealInstantiateCallback.html">IDealInstantiateCallback</a>
-  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_Avatar.md&amp;value=---%0Auid%3A%20DEAL.Avatar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L12" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/Avatar.cs/#L12" class="edit-link">Edit this page</a>
         </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      
-      <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

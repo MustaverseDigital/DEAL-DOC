@@ -1,104 +1,139 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class BaseDeck </title>
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class BaseDeck ">
-    
-    <meta name="description" content="Base class for all decks in the game  A deck is a type of card holder that can either be a player&#39;s hand or a dealer&#39;s deck. Cards can be added or removed from the deck.">
-      <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      
+      <meta name="description" content="Base class for all decks in the game  A deck is a type of card holder that can either be a player&#39;s hand or a dealer&#39;s deck. Cards can be added or removed from the deck.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/Logo.png" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/Logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="DEAL.BaseDeck">
+
+        <article data-uid="DEAL.BaseDeck">
 
 
 
-  <h1 id="DEAL_BaseDeck" data-uid="DEAL.BaseDeck" class="text-break">Class BaseDeck</h1>
-  <div class="markdown level0 summary"><p>Base class for all decks in the game <p></p>
+  <h1 id="DEAL_BaseDeck" data-uid="DEAL.BaseDeck" class="text-break">
+Class BaseDeck  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="DEAL.html">DEAL</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Mustaverse.DEAL.Runtime.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Base class for all decks in the game <p></p>
 A deck is a type of card holder that can either be a player's hand or a dealer's deck.
 Cards can be added or removed from the deck.
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">Object</span></div>
-    <div class="level2"><span class="xref">Component</span></div>
-    <div class="level3"><span class="xref">Behaviour</span></div>
-    <div class="level4"><span class="xref">MonoBehaviour</span></div>
-    <div class="level5"><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></div>
-    <div class="level6"><span class="xref">BaseDeck</span></div>
-      <div class="level7"><a class="xref" href="DEAL.CountingDeck.html">CountingDeck</a></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BaseDeck : CardHolder</code></pre>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></div>
+      <div><span class="xref">BaseDeck</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="DEAL.CountingDeck.html">CountingDeck</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_Index">CardHolder.Index</a>
     </div>
@@ -123,705 +158,663 @@ Cards can be added or removed from the deck.
     <div>
       <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_SetCustomProperties_System_String_System_Int32_">CardHolder.SetCustomProperties(string, int)</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="DEAL.html">DEAL</a></h6>
-  <h6><strong>Assembly</strong>: Mustaverse.DEAL.Runtime.dll</h6>
-  <h5 id="DEAL_BaseDeck_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BaseDeck : CardHolder</code></pre>
-  </div>
-  <h3 id="fields">Fields
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_cardPool.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.cardPool%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L20">View Source</a>
-  </span>
-  <h4 id="DEAL_BaseDeck_cardPool" data-uid="DEAL.BaseDeck.cardPool">cardPool</h4>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="DEAL_BaseDeck_cardPool" data-uid="DEAL.BaseDeck.cardPool">
+  cardPool
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[SerializeField]
 protected List&lt;BaseCard&gt; cardPool</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_deckSO.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.deckSO%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L17">View Source</a>
-  </span>
-  <h4 id="DEAL_BaseDeck_deckSO" data-uid="DEAL.BaseDeck.deckSO">deckSO</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DEAL_BaseDeck_deckSO" data-uid="DEAL.BaseDeck.deckSO">
+  deckSO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[SerializeField]
 protected DeckSO deckSO</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.DeckSO.html">DeckSO</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_targetDeck.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.targetDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L25">View Source</a>
-  </span>
-  <h4 id="DEAL_BaseDeck_targetDeck" data-uid="DEAL.BaseDeck.targetDeck">targetDeck</h4>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DEAL.DeckSO.html">DeckSO</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="DEAL_BaseDeck_targetDeck" data-uid="DEAL.BaseDeck.targetDeck">
+  targetDeck
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[SerializeField]
 protected BaseDeck targetDeck</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.BaseDeck.html">BaseDeck</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_DebugVisibleCardPool.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.DebugVisibleCardPool%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L22">View Source</a>
-  </span>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DEAL.BaseDeck.html">BaseDeck</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
   <a id="DEAL_BaseDeck_DebugVisibleCardPool_" data-uid="DEAL.BaseDeck.DebugVisibleCardPool*"></a>
-  <h4 id="DEAL_BaseDeck_DebugVisibleCardPool" data-uid="DEAL.BaseDeck.DebugVisibleCardPool">DebugVisibleCardPool</h4>
+
+  <h3 id="DEAL_BaseDeck_DebugVisibleCardPool" data-uid="DEAL.BaseDeck.DebugVisibleCardPool">
+  DebugVisibleCardPool
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public List&lt;BaseCard&gt; DebugVisibleCardPool { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_ClearOwnership_DEAL_BaseCard_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.ClearOwnership(DEAL.BaseCard)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L94">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="DEAL_BaseDeck_ClearOwnership_" data-uid="DEAL.BaseDeck.ClearOwnership*"></a>
-  <h4 id="DEAL_BaseDeck_ClearOwnership_DEAL_BaseCard_" data-uid="DEAL.BaseDeck.ClearOwnership(DEAL.BaseCard)">ClearOwnership(BaseCard)</h4>
+
+  <h3 id="DEAL_BaseDeck_ClearOwnership_DEAL_BaseCard_" data-uid="DEAL.BaseDeck.ClearOwnership(DEAL.BaseCard)">
+  ClearOwnership(BaseCard)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Release ownership of a card, will first trigger special move if any exists</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void ClearOwnership(BaseCard c)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
-        <td><span class="parametername">c</span></td>
-        <td><p>The card to release</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_ClearOwnership_DEAL_BaseCard_">CardHolder.ClearOwnership(BaseCard)</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_ClearPool.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.ClearPool%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L212">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="DEAL.BaseCard.html">BaseCard</a></dt>
+    <dd><p>The card to release</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_ClearPool_" data-uid="DEAL.BaseDeck.ClearPool*"></a>
-  <h4 id="DEAL_BaseDeck_ClearPool" data-uid="DEAL.BaseDeck.ClearPool">ClearPool()</h4>
+
+  <h3 id="DEAL_BaseDeck_ClearPool" data-uid="DEAL.BaseDeck.ClearPool">
+  ClearPool()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ClearPool()</code></pre>
   </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_GenerateAutoPickCombinations_DEAL_FSM_CardChoice_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GenerateAutoPickCombinations(DEAL.FSM.CardChoice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L142">View Source</a>
-  </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_GenerateAutoPickCombinations_" data-uid="DEAL.BaseDeck.GenerateAutoPickCombinations*"></a>
-  <h4 id="DEAL_BaseDeck_GenerateAutoPickCombinations_DEAL_FSM_CardChoice_" data-uid="DEAL.BaseDeck.GenerateAutoPickCombinations(DEAL.FSM.CardChoice)">GenerateAutoPickCombinations(CardChoice)</h4>
+
+  <h3 id="DEAL_BaseDeck_GenerateAutoPickCombinations_DEAL_FSM_CardChoice_" data-uid="DEAL.BaseDeck.GenerateAutoPickCombinations(DEAL.FSM.CardChoice)">
+  GenerateAutoPickCombinations(CardChoice)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override IEnumerable&lt;BaseCard&gt;[] GenerateAutoPickCombinations(CardChoice choice)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.FSM.CardChoice.html">CardChoice</a></td>
-        <td><span class="parametername">choice</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_GenerateAutoPickCombinations_DEAL_FSM_CardChoice_">CardHolder.GenerateAutoPickCombinations(CardChoice)</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_GetHolderId.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GetHolderId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L191">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>choice</code> <a class="xref" href="DEAL.FSM.CardChoice.html">CardChoice</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_GetHolderId_" data-uid="DEAL.BaseDeck.GetHolderId*"></a>
-  <h4 id="DEAL_BaseDeck_GetHolderId" data-uid="DEAL.BaseDeck.GetHolderId">GetHolderId()</h4>
+
+  <h3 id="DEAL_BaseDeck_GetHolderId" data-uid="DEAL.BaseDeck.GetHolderId">
+  GetHolderId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override int GetHolderId()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_GetHolderId">CardHolder.GetHolderId()</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_GetSize.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GetSize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L207">View Source</a>
-  </span>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_GetSize_" data-uid="DEAL.BaseDeck.GetSize*"></a>
-  <h4 id="DEAL_BaseDeck_GetSize" data-uid="DEAL.BaseDeck.GetSize">GetSize()</h4>
+
+  <h3 id="DEAL_BaseDeck_GetSize" data-uid="DEAL.BaseDeck.GetSize">
+  GetSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override int GetSize()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_GetSize">CardHolder.GetSize()</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_GetWeightDescCombinations_System_Collections_Generic_List_DEAL_BaseCard__System_Int32_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List%7BDEAL.BaseCard%7D%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L159">View Source</a>
-  </span>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_GetWeightDescCombinations_" data-uid="DEAL.BaseDeck.GetWeightDescCombinations*"></a>
-  <h4 id="DEAL_BaseDeck_GetWeightDescCombinations_System_Collections_Generic_List_DEAL_BaseCard__System_Int32_" data-uid="DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List{DEAL.BaseCard},System.Int32)">GetWeightDescCombinations(List&lt;BaseCard&gt;, int)</h4>
+
+  <h3 id="DEAL_BaseDeck_GetWeightDescCombinations_System_Collections_Generic_List_DEAL_BaseCard__System_Int32_" data-uid="DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List{DEAL.BaseCard},System.Int32)">
+  GetWeightDescCombinations(List&lt;BaseCard&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Helper method to generate all possible combinations of cards in the deck with weight for AI players to make decisions</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IEnumerable&lt;BaseCard&gt;&gt; GetWeightDescCombinations(List&lt;BaseCard&gt; cards, int count)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</td>
-        <td><span class="parametername">cards</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">count</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_InitDeck_DEAL_DeckSO_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.InitDeck(DEAL.DeckSO)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L57">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cards</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_InitDeck_" data-uid="DEAL.BaseDeck.InitDeck*"></a>
-  <h4 id="DEAL_BaseDeck_InitDeck_DEAL_DeckSO_" data-uid="DEAL.BaseDeck.InitDeck(DEAL.DeckSO)">InitDeck(DeckSO)</h4>
+
+  <h3 id="DEAL_BaseDeck_InitDeck_DEAL_DeckSO_" data-uid="DEAL.BaseDeck.InitDeck(DEAL.DeckSO)">
+  InitDeck(DeckSO)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Initialize the deck with a given deck data</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void InitDeck(DeckSO data)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.DeckSO.html">DeckSO</a></td>
-        <td><span class="parametername">data</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_OnCardClaimed_DEAL_BaseCard_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.OnCardClaimed(DEAL.BaseCard)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L70">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="DEAL.DeckSO.html">DeckSO</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_OnCardClaimed_" data-uid="DEAL.BaseDeck.OnCardClaimed*"></a>
-  <h4 id="DEAL_BaseDeck_OnCardClaimed_DEAL_BaseCard_" data-uid="DEAL.BaseDeck.OnCardClaimed(DEAL.BaseCard)">OnCardClaimed(BaseCard)</h4>
+
+  <h3 id="DEAL_BaseDeck_OnCardClaimed_DEAL_BaseCard_" data-uid="DEAL.BaseDeck.OnCardClaimed(DEAL.BaseCard)">
+  OnCardClaimed(BaseCard)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Triggered when a card is claimed by this holder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void OnCardClaimed(BaseCard c)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
-        <td><span class="parametername">c</span></td>
-        <td><p>The card claimed</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnCardClaimed_DEAL_BaseCard_">CardHolder.OnCardClaimed(BaseCard)</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_OnCardCleared_DEAL_BaseCard_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.OnCardCleared(DEAL.BaseCard)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L76">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="DEAL.BaseCard.html">BaseCard</a></dt>
+    <dd><p>The card claimed</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_OnCardCleared_" data-uid="DEAL.BaseDeck.OnCardCleared*"></a>
-  <h4 id="DEAL_BaseDeck_OnCardCleared_DEAL_BaseCard_" data-uid="DEAL.BaseDeck.OnCardCleared(DEAL.BaseCard)">OnCardCleared(BaseCard)</h4>
+
+  <h3 id="DEAL_BaseDeck_OnCardCleared_DEAL_BaseCard_" data-uid="DEAL.BaseDeck.OnCardCleared(DEAL.BaseCard)">
+  OnCardCleared(BaseCard)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Triggered when a card is cleared from this holder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void OnCardCleared(BaseCard c)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
-        <td><span class="parametername">c</span></td>
-        <td><p>The card cleared</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnCardCleared_DEAL_BaseCard_">CardHolder.OnCardCleared(BaseCard)</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_OnRefreshDeck.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.OnRefreshDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L81">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="DEAL.BaseCard.html">BaseCard</a></dt>
+    <dd><p>The card cleared</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_OnRefreshDeck_" data-uid="DEAL.BaseDeck.OnRefreshDeck*"></a>
-  <h4 id="DEAL_BaseDeck_OnRefreshDeck" data-uid="DEAL.BaseDeck.OnRefreshDeck">OnRefreshDeck()</h4>
+
+  <h3 id="DEAL_BaseDeck_OnRefreshDeck" data-uid="DEAL.BaseDeck.OnRefreshDeck">
+  OnRefreshDeck()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Callback to be invoked whenever this holder's cards have changed and need to be refreshed</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void OnRefreshDeck()</code></pre>
   </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnRefreshDeck">CardHolder.OnRefreshDeck()</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_PickCards_DEAL_FSM_CardChoice_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.PickCards(DEAL.FSM.CardChoice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L100">View Source</a>
-  </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_PickCards_" data-uid="DEAL.BaseDeck.PickCards*"></a>
-  <h4 id="DEAL_BaseDeck_PickCards_DEAL_FSM_CardChoice_" data-uid="DEAL.BaseDeck.PickCards(DEAL.FSM.CardChoice)">PickCards(CardChoice)</h4>
+
+  <h3 id="DEAL_BaseDeck_PickCards_DEAL_FSM_CardChoice_" data-uid="DEAL.BaseDeck.PickCards(DEAL.FSM.CardChoice)">
+  PickCards(CardChoice)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Pick cards from this holder based on given rules</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override BaseCard[] PickCards(CardChoice choice)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.FSM.CardChoice.html">CardChoice</a></td>
-        <td><span class="parametername">choice</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a>[]</td>
-        <td><p>An array of cards picked</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_PickCards_DEAL_FSM_CardChoice_">CardHolder.PickCards(CardChoice)</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_TestCardDeal_System_Int32_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TestCardDeal(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L31">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>choice</code> <a class="xref" href="DEAL.FSM.CardChoice.html">CardChoice</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DEAL.BaseCard.html">BaseCard</a>[]</dt>
+    <dd><p>An array of cards picked</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_TestCardDeal_" data-uid="DEAL.BaseDeck.TestCardDeal*"></a>
-  <h4 id="DEAL_BaseDeck_TestCardDeal_System_Int32_" data-uid="DEAL.BaseDeck.TestCardDeal(System.Int32)">TestCardDeal(int)</h4>
+
+  <h3 id="DEAL_BaseDeck_TestCardDeal_System_Int32_" data-uid="DEAL.BaseDeck.TestCardDeal(System.Int32)">
+  TestCardDeal(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Debug method to test dealing a card from the deck</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TestCardDeal(int slotId)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">slotId</span></td>
-        <td><p>The index of the card in the deck</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_TestShowHand.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TestShowHand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L45">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the card in the deck</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_TestShowHand_" data-uid="DEAL.BaseDeck.TestShowHand*"></a>
-  <h4 id="DEAL_BaseDeck_TestShowHand" data-uid="DEAL.BaseDeck.TestShowHand">TestShowHand()</h4>
+
+  <h3 id="DEAL_BaseDeck_TestShowHand" data-uid="DEAL.BaseDeck.TestShowHand">
+  TestShowHand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Debug method to test revealing all cards in the deck</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void TestShowHand()</code></pre>
   </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_TransferCard_DEAL_BaseCard_DEAL_CardHolder_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TransferCard(DEAL.BaseCard%2CDEAL.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L171">View Source</a>
-  </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_TransferCard_" data-uid="DEAL.BaseDeck.TransferCard*"></a>
-  <h4 id="DEAL_BaseDeck_TransferCard_DEAL_BaseCard_DEAL_CardHolder_" data-uid="DEAL.BaseDeck.TransferCard(DEAL.BaseCard,DEAL.CardHolder)">TransferCard(BaseCard, CardHolder)</h4>
+
+  <h3 id="DEAL_BaseDeck_TransferCard_DEAL_BaseCard_DEAL_CardHolder_" data-uid="DEAL.BaseDeck.TransferCard(DEAL.BaseCard,DEAL.CardHolder)">
+  TransferCard(BaseCard, CardHolder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Transfer a single card to another holder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void TransferCard(BaseCard c, CardHolder newOwner)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
-        <td><span class="parametername">c</span></td>
-        <td><p>The card to transfer</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></td>
-        <td><span class="parametername">newOwner</span></td>
-        <td><p>The new owner of the card</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_TransferCard_DEAL_BaseCard_DEAL_CardHolder_">CardHolder.TransferCard(BaseCard, CardHolder)</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable%7BDEAL.BaseCard%7D%2CDEAL.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L181">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="DEAL.BaseCard.html">BaseCard</a></dt>
+    <dd><p>The card to transfer</p>
+</dd>
+    <dt><code>newOwner</code> <a class="xref" href="DEAL.CardHolder.html">CardHolder</a></dt>
+    <dd><p>The new owner of the card</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="DEAL_BaseDeck_TransferCards_" data-uid="DEAL.BaseDeck.TransferCards*"></a>
-  <h4 id="DEAL_BaseDeck_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_" data-uid="DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)">TransferCards(IEnumerable&lt;BaseCard&gt;, CardHolder)</h4>
+
+  <h3 id="DEAL_BaseDeck_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_" data-uid="DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)">
+  TransferCards(IEnumerable&lt;BaseCard&gt;, CardHolder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Transfer a group of cards to another holder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void TransferCards(IEnumerable&lt;BaseCard&gt; cards, CardHolder newOwner)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</td>
-        <td><span class="parametername">cards</span></td>
-        <td><p>The cards to transfer</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></td>
-        <td><span class="parametername">newOwner</span></td>
-        <td><p>The new owner of the cards</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_">CardHolder.TransferCards(IEnumerable&lt;BaseCard&gt;, CardHolder)</a></div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cards</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</dt>
+    <dd><p>The cards to transfer</p>
+</dd>
+    <dt><code>newOwner</code> <a class="xref" href="DEAL.CardHolder.html">CardHolder</a></dt>
+    <dd><p>The new owner of the cards</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/MustaverseDigital/DealToolkit/new/main/apiSpec/new?filename=DEAL_BaseDeck.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L14" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MustaverseDigital/DealToolkit/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L14" class="edit-link">Edit this page</a>
         </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      
-      <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
