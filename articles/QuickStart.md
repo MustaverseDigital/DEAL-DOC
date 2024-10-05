@@ -94,7 +94,7 @@ The FSM consists of 7 states, each with specific functions, explained below:
 
 ## Global Info Configuration
 
-![Global Info Config](../images/GlobalInfo.png)
+![Global Info Config](../images/GlobalInfo.png){width=500 height=300}
 
 The **Global Info** Scriptable Object (SO) holds the global configuration settings for the game, including details like the game name, FSM, player settings, and any necessary global variables.
 
@@ -125,6 +125,8 @@ The **Global Info** Scriptable Object (SO) holds the global configuration settin
 4. Assign the **Player Canvas** to the `Dialog Manager` reference in the `ViewManager` component.
 
 ---
+
+![youtube.com](https://youtu.be/0YtTJY08Pgw?si=kX9mgszai83stNZz)
 
 >Congratulations! You’ve successfully set up the **High Card** game using the DEAL Toolkit. Your game is now ready to play, and you’ve learned how to configure both the FSM and the global game settings.
 

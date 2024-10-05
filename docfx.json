@@ -16,10 +16,16 @@
       "filter": "filterConfig.yml"
     }
   ],
-  "build": {
+  "build": {"markdownEngineProperties": {
+      "markdigExtensions": [
+        "attributes"
+      ]
+    },
     "globalMetadata": {
       "_appLogoPath": "images/Logo.png",
       "_enableSearch": "true",
+      "_gitContribute": "false",
+      "_enableNewTab": "true",
       "pdf": true
     },
     "content": [
@@ -52,34 +58,5 @@
     "noLangKeyword": false,
     "keepFileLink": false,
     "disableGitFeatures": false
-  },
-  "pdf": {
-    "content": [
-      {
-        "files": ["PDF/toc.yml"]
-      },
-      {
-        "files": ["reference/**.yml", "reference/index.md"],
-        "exclude": ["**/toc.yml", "**/toc.md"]
-      },
-      {
-        "files": ["Concepts/**.md", "Concepts/**/toc.yml", "toc.yml", "*.md"],
-        "exclude": [
-          "**/bin/**",
-          "**/obj/**",
-          "PDF/**",
-          "**/toc.yml",
-          "**/toc.md"
-        ]
-      }
-    ],
-    "resource": [
-      {
-        "files": ["images/**"],
-        "exclude": ["**/bin/**", "**/obj/**", "PDF/**"]
-      }
-    ],
-    "dest": "_pdf",
-    "outline": "NoOutline"
   }
 }

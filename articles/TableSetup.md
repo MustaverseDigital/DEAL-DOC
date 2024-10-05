@@ -10,7 +10,7 @@ date: 2024-09-15
 This guide explains how to configure the **game table** in your card game using the DEAL Toolkit. By following these steps, you'll create the main table layout, which includes components like avatars, seats, tiles, and decks.
 
 ## Table Canvas
-![Base Table](../images/BaseTable.png)
+![Base Table](../images/BaseTable.png){width=300 height=300}
 - **Overview**: The game table consists of essential components like **avatars**, **seats**, **tiles**, and **decks**. These elements are managed by the `BaseTable` component within the **Deal Engine**.
   
 ### Key Components:

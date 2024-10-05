@@ -1,4 +1,4 @@
-![alt Logo](https://assetstorev1-prd-cdn.unity3d.com/key-image/331f0abe-ef84-4de5-8fb2-4fe100386e24.jpg)
+![alt Logo](https://assetstorev1-prd-cdn.unity3d.com/key-image/331f0abe-ef84-4de5-8fb2-4fe100386e24.jpg){width=800 height=300}
 > The DEAL Toolkit is a lightweight, simple, and fast card game development tool that allows you to focus on creating without worrying about complex technical details. Whether you want to convert a classic card game into a digital version or conceive a brand-new tabletop game, the DEAL Toolkit aims to provide a low-code or even no-code solution.
 
 you can easily create cards and tables in Unity and integrate them into an interactive and customizable virtual environment. This tool features a powerful Finite State Machine (FSM) system, making game logic design simple and intuitive, even for users without programming experience.
